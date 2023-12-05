@@ -1,22 +1,4 @@
 {
-    "version": 2,
-    "name": "bunlysia",
-    "builds": [
-        {
-            "src": "src/index.ts",
-            "use": "@vercel/node"
-        }
-    ],
-    "routes": [
-        {
-            "src": "/",
-            "dest": "/"
-        },
-        {
-            "src": "/",
-            "dest": "/"
-        }
-    ],
     "rewrites": [
         {
             "source": "/(.*)",
