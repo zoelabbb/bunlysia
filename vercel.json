@@ -9,12 +9,12 @@
     ],
     "routes": [
         {
-            "src": "/",
-            "dest": "/"
+            "src": "./src/",
+            "dest": "./src/"
         },
         {
-            "src": "/",
-            "dest": "/"
+            "src": "./src/",
+            "dest": "./src/"
         }
     ],
     "rewrites": [
