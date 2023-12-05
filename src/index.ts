@@ -10,6 +10,7 @@ const app = new Elysia()
     })
   )
   .use(cookie())
+  .get('/', () => 'Hello this API using Bun with Elysia')
   .get('/sign/:name', async ({ romanov, cookie, setCookie, params }) => {
     const token = await romanov.sign(params);
 
