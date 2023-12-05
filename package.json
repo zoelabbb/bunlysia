@@ -1,11 +1,13 @@
 {
-  "name": "app",
+  "name": "restapi_exam",
   "version": "1.0.50",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "bun run --watch src/index.ts"
   },
   "dependencies": {
+    "@elysiajs/cookie": "^0.7.0",
+    "@elysiajs/jwt": "^0.7.0",
     "elysia": "latest"
   },
   "devDependencies": {
