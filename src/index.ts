@@ -5,13 +5,13 @@ import { jwt } from '@elysiajs/jwt';
 const app = new Elysia()
   .use(
     jwt({
-      name: 'jwt',
-      secret: 'Fischl von Luftschloss Narfidort',
+      name: 'romanov',
+      secret: 'mowzaski',
     })
   )
   .use(cookie())
-  .get('/sign/:name', async ({ jwt, cookie, setCookie, params }) => {
-    const token = await jwt.sign(params);
+  .get('/sign/:name', async ({ romanov, cookie, setCookie, params }) => {
+    const token = await romanov.sign(params);
 
     setCookie('auth', token, {
       httpOnly: true,
@@ -20,9 +20,9 @@ const app = new Elysia()
 
     return `Sign in as ${params.name}, your token is ${cookie.auth}`;
   })
-  .get('/profile', async ({ jwt, set, cookie: { auth } }) => {
+  .get('/profile', async ({ romanov, set, cookie: { auth } }) => {
     try {
-      const profile = await jwt.verify(auth);
+      const profile = await romanov.verify(auth);
 
       if (!profile) {
         set.status = 401;
