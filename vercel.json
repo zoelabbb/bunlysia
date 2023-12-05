@@ -15,13 +15,13 @@
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "src/index.ts"
+            "dest": "/"
         }
     ],
     "rewrites": [
         {
             "source": "/(.*)",
-            "destination": "src/index.ts"
+            "destination": "/"
         }
     ]
 }
