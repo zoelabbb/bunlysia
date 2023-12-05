@@ -3,7 +3,7 @@
     "name": "bunlysia",
     "builds": [
         {
-            "src": "/",
+            "src": "src/index.ts",
             "use": "@vercel/node"
         }
     ],
